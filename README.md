@@ -25,111 +25,46 @@ Expected Output : <br>
 19 <br>
 13 <br>
 
-**2**. Write a Java program to compare two numbers. <br>
-Input Data: <br>
-Input first integer: 25 <br>
-Input second integer: 39 <br>
-Expected Output <br>
-<br>
-25 != 39 <br>                                                                          
-25 < 39 <br>                                                                     
-25 <= 39 <br>
+### Final Test
+--------------------
 
-**3**. Write a Java program to compare two numbers. Same like the **2**, but now will receive an float number. Use BigDecimal comparation. <br>
-Input Data: <br>
-Input first integer: 25.32 <br>
-Input second integer: 39.40 <br>
-Expected Output <br>
-<br>
-25 != 39 <br>                                                                          
-25 < 39 <br>                                                                     
-25 <= 39 <br>
+A squad of robotic rovers are to be landed by NASA on a plateau on Mars. This plateau, which is curiously rectangular, must be navigated by the rovers so that their on-board cameras can get a complete view of the surrounding terrain to send back to Earth.
+A rover's position and location is represented by a combination of x and y co-ordinates and a letter representing one of the four cardinal compass points. The plateau is divided up into a grid to simplify navigation. An example position might be 0, 0, N, which means the rover is in the bottom left corner and facing North.
+In order to control a rover, NASA sends a simple string of letters. The possible letters are 'L', 'R' and 'M'. 'L' and 'R' makes the rover spin 90 degrees left or right respectively, without moving from its current spot. 'M' means move forward one grid point, and maintain the same heading.
 
-**4**. Write a Java program to reverse a word. <br>
-Sample Output: <br>
-<br>
-Input a word: dsaf <br>
-Reverse word: fasd <br>
+Assume that the square directly North from (x, y) is (x, y+1).
 
-**5**. Write a program in Java to input 5 numbers from keyboard and find their sum and average. <br>
-<br>
-Test Data <br>
-Input the 5 numbers : 1 2 3 4 5 <br> 
-Expected Output : <br>
-<br>
-Input the 5 numbers : <br>                                                            
-1 <br>                                                       
-2 <br>                                                                           
-3 <br>                                                                           
-4 <br>                                                                           
-5 <br>                                                                           
-The sum of 5 no is : 15 <br>                                                          
-The Average is : 3.0  <br>
+#### INPUT:
 
-**6**. Write a Java program to swap the first and last elements of an array (length must be at least 1) and create a new array.<br>
-Sample Output:<br>
-<br>
-Original Array: [20, 30, 40] <br>                                           
-New array after swaping the first and last elements: [40, 30, 20] <br>
+The first line of input is the upper-right coordinates of the plateau, the lower-left coordinates are assumed to be 0,0.
 
-**7**. Write a Java program to merge two given sorted array of integers and create a new sorted array. <br>
-array1 = [1,2,3,4] <br>
-array2 = [2,5,7, 8] <br>
-result = [1,2,2,3,4,5,7,8] <br>
+The rest of the input is information pertaining to the rovers that have been deployed. Each rover has two lines of input. The first line gives the rover's position, and the second line is a series of instructions telling the rover how to explore the plateau.
+The position is made up of two integers and a letter separated by spaces, corresponding to the x and y co-ordinates and the rover's orientation.
 
-**8**. Write a Java program to break an integer into a sequence of individual digits. <br>
-<br>
-Test Data <br>
-Input six non-negative digits: 123456 <br>
-Expected Output : <br>
-1 2 3 4 5 6 <br>
+Each rover will be finished sequentially, which means that the second rover won't start to move until the first one has finished moving.
 
-**9**. Write a Java program that prints the current datetime. Use LocalDate/LocalDateTime from Java 8. <br>
+#### OUTPUT:
 
-**10**. Write a Java program to get a number from the user and print whether it is positive or negative. <br>
-<br>
-Test Data <br>
-Input number: 35 <br>
-Expected Output : <br>
-Number is positive <br>
+The output for each rover should be its final co-ordinates and heading.
 
-**11**. Write a Java program to find the number of days in a month. Use LocalDate/LocalDateTime from Java 8. <br>
-<br>
-Test Data <br>
-Input a month number: 2 <br>
-Input a year: 2016 <br>
-Expected Output : <br>
-February 2016 has 29 days <br>
+#### INPUT AND OUTPUT:
 
-**12**. Write a Java program to test if an array contains a specific value. <br>
-<br>
-For example, the array [10,20,30,40] <br>
-Input: 32 <br>
-Print some error or if has the number, print some success. <br>
+##### Test Input:
+5 5
 
-**13**. Write a Java program to remove a specific element from an array. <br>
+1 2 N
 
-**14**. Write a Java program to insert an element (specific position) into an array. <br>
+LMLMLMLMM
 
-**15**. Write a Java program to find the maximum and minimum value of an array. <br>
+3 3 E
 
-**16**. Write a Java program to reverse an array of integer values. <br>
+MMRMMRMRRM
 
-**17**. Write a Java program to convert a POJO object to a json. Use GSON API. <br>
-<br>
-For example, object account, with the attributes name (with value conta1) and id(with value 2) <br>
-The output will be <br>
-```
-{
-	"id": 2,
-	"name": "conta1"
-}
-```
-<br>
+##### Expected Output:
 
-**18**. Write a Java program to convert a string date to a LocaDate. Use LocalDate from java 8. <br>
-<br>
-For example, the string **20/10/2010** will converted to a LocalDate object. <br>
+1 3 N
+
+5 1 E
 
 
 
